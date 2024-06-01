@@ -28,7 +28,7 @@ export default function App() {
       <View style={styles.content}>
 
         <View>
-          <Text style={{ fontSize: 28, paddingTop: 50 }}>Categories</Text>
+          <Text style={{ fontSize: 28, paddingTop: 40 }}>Categories</Text>
         </View>
 
         <View style={styles.generalContent}>
@@ -97,9 +97,10 @@ const screenWidth = Dimensions.get('window').width;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'powderblue',
+    backgroundColor: '#F7F0E8',
     flex: 1,
-    paddingTop: 50,
+    fontFamily: 'Lato',
+    paddingTop: 52,
     padding: 20,
   },
 
@@ -119,7 +120,7 @@ const styles = StyleSheet.create({
   searchSection: {
     flexDirection: 'row',
     justifyContent: 'flex-start',
-    backgroundColor: '#fff',
+    backgroundColor: '#FBF9F7',
     borderRadius: 10,
     height: 45,
     width: screenWidth - 100,
@@ -132,25 +133,27 @@ const styles = StyleSheet.create({
 
   input: {
     width: '100%',
+    fontSize: 16,
+    left: 10,
   },
 
   card: {
     backgroundColor: '#fff',
     borderRadius: 10,
-    height: 200,
-    width: 200,
+    height: 192,
+    width: 186,
     padding: 15,
     marginRight: 20,
 
   },
 
   task: {
-    margin: 10,
+    marginBottom: 20,
     height: 150,
     width: screenWidth - 50,
     borderRadius: 10,
     borderWidth: 1,
-    borderColor: 'gray',
+    borderColor: '#E8D1BA',
     padding: 15,
     alignItems: 'left',
     justifyContent: 'center',
