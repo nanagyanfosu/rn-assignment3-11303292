@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View, ScrollView, Text, SafeAreaView, Image, TextInput } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Dimensions } from 'react-native';
+import { FlatList } from 'react-native';
 
 
 export default function App() {
@@ -84,11 +85,51 @@ export default function App() {
             <Text style={{ fontSize: 20, }}>Push Ups</Text>
           </View>
 
+          <View style={styles.task} backgroundColor='white'>
+            <Text style={{ fontSize: 20, }}>Mobile App Development</Text>
+          </View>
+
+          <View style={styles.task} >
+            <Text style={{ fontSize: 20, }}>Web Development</Text>
+          </View>
+
+          <View style={styles.task} backgroundColor='white'>
+            <Text style={{ fontSize: 20, }}>Push Ups</Text>
+          </View>
+
+          <View style={styles.task} backgroundColor='white'>
+            <Text style={{ fontSize: 20, }}>Mobile App Development</Text>
+          </View>
+
+          <View style={styles.task} >
+            <Text style={{ fontSize: 20, }}>Web Development</Text>
+          </View>
+
+          <View style={styles.task} backgroundColor='white'>
+            <Text style={{ fontSize: 20, }}>Push Ups</Text>
+          </View>
+
+          <View style={styles.task} backgroundColor='white'>
+            <Text style={{ fontSize: 20, }}>Mobile App Development</Text>
+          </View>
+
+          <View style={styles.task} >
+            <Text style={{ fontSize: 20, }}>Web Development</Text>
+          </View>
+
+          <View style={styles.task} backgroundColor='white'>
+            <Text style={{ fontSize: 20, }}>Push Ups</Text>
+          </View>
+
+
+
+
+
 
         </View>
 
       </View>
-    </ScrollView>
+    </ScrollView >
   );
 };
 
