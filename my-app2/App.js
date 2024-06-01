@@ -23,6 +23,27 @@ export default function App() {
 
       </View>
 
+      <View style={styles.content}>
+        <View>
+          <Text style={{ fontSize: 28, paddingTop: 50 }}>Categories</Text>
+        </View>
+
+        <View style={styles.generalContent}>
+          <View style={styles.card} backgroundColor="white">
+            <Text style={{ fontSize: 23 }}>Exercise</Text>
+            <Text>12 tasks</Text>
+            <Image source={require('./assets/young woman working online.png')} style={{ padding: 10, marginHorizontal: 20 }} />
+          </View>
+        </View>
+
+        <View style={styles.card} backgroundColor="white">
+          <Text style={{ fontSize: 23 }}>Exercise</Text>
+          <Text>12 tasks</Text>
+          <Image source={require('./assets/young woman working online.png')} style={{ padding: 10, marginHorizontal: 20 }} />
+        </View>
+
+      </View>
+
 
     </ScrollView>
   );
@@ -33,7 +54,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'powderblue',
     flex: 1,
     paddingTop: 50,
-    padding: 30,
+    padding: 20,
   },
 
   row: {
@@ -55,12 +76,31 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     borderRadius: 10,
     height: 45,
-    width: 240,
+    width: 270,
     padding: 5,
   },
 
   searchIcon: {
     padding: 5,
+  },
+
+  input: {
+    width: '100%',
+  },
+
+  card: {
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    height: 200,
+    width: 200,
+    padding: 10,
+
+  },
+
+  generalContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
   },
 
 });
