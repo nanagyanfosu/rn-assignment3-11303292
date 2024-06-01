@@ -16,7 +16,7 @@ export default function App() {
 
       <View style={styles.searchRow}>
         <View style={styles.searchSection}>
-          <Icon style={styles.searchIcon} name="search" size={23} color="black" backgroundColor="white" />
+          <Icon style={styles.searchIcon} name="search" size={21} color="black" backgroundColor="white" />
           <TextInput style={styles.input} placeholder='Search'></TextInput>
         </View>
         <Image source={require('./assets/Group 2.png')} style={{ width: 45, height: 45 }} />
@@ -29,17 +29,35 @@ export default function App() {
         </View>
 
         <View style={styles.generalContent}>
-          <View style={styles.card} backgroundColor="white">
-            <Text style={{ fontSize: 23 }}>Exercise</Text>
-            <Text>12 tasks</Text>
-            <Image source={require('./assets/young woman working online.png')} style={{ padding: 10, marginHorizontal: 20 }} />
-          </View>
-        </View>
+          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
 
-        <View style={styles.card} backgroundColor="white">
-          <Text style={{ fontSize: 23 }}>Exercise</Text>
-          <Text>12 tasks</Text>
-          <Image source={require('./assets/young woman working online.png')} style={{ padding: 10, marginHorizontal: 20 }} />
+            <View style={{ flexDirection: 'row', paddingTop: 15 }}>
+              <View style={styles.card} backgroundColor="white">
+                <Text style={{ fontSize: 21 }}>Exercise</Text>
+                <Text>12 tasks</Text>
+                <Image source={require('./assets/young woman working online.png')} style={{ padding: 10, marginHorizontal: 20 }} />
+              </View>
+
+              <View style={styles.card} backgroundColor="white">
+                <Text style={{ fontSize: 21 }}>Study</Text>
+                <Text>12 tasks</Text>
+                <Image source={require('./assets/young woman working at desk.png')} style={{ padding: 10, marginHorizontal: 20 }} />
+              </View>
+
+              <View style={styles.card} backgroundColor="white">
+                <Text style={{ fontSize: 21 }}>Exercise</Text>
+                <Text>12 tasks</Text>
+                <Image source={require('./assets/young woman working online.png')} style={{ padding: 10, marginHorizontal: 20 }} />
+              </View>
+
+              <View style={styles.card} backgroundColor="white">
+                <Text style={{ fontSize: 21 }}>Study</Text>
+                <Text>12 tasks</Text>
+                <Image source={require('./assets/young woman working at desk.png')} style={{ padding: 10, marginHorizontal: 20 }} />
+              </View>
+
+            </View>
+          </ScrollView>
         </View>
 
       </View>
@@ -93,15 +111,10 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     height: 200,
     width: 200,
-    padding: 10,
+    padding: 15,
+    marginRight: 20,
 
-  },
-
-  generalContent: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
+  }
 
 });
 
