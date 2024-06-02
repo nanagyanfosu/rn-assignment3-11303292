@@ -3,10 +3,20 @@ By Theoford Nana Gyanfosu
 
 # description of components
 TextInput: Allows users to input text into the search bar component of the app.
+
+
 StyleSheet: Contains the code used to apply style to the app.
+
+
 ScrollView: Allows users to scroll either vertically or horizontally to view other parts of the pages.
+
+
 View: Works as a sort of div/section for separating and displaying components individually.
+
+
 Text: Displays desired text to the end user.
+
+
 Images: Displays images to the end user.
 
 
